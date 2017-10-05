@@ -1,0 +1,27 @@
+\documentclass[a4j,12pt]{jsarticle}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\topmargin = 0mm
+\pagestyle{empty}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{(\roman{subsubsection})}
+
+\makeatletter
+    \renewcommand{\theequation}{\arabic{subsection}.\arabic{equation}}
+    \@addtoreset{equation}{subsection}
+\makeatother
+
+\begin {document}
+
+\begin{center}
+    \begin{LARGE}
+        {\huge 電磁気学 10/2 宿題}\vspace{0.2em}\\ 416841 長谷川央
+    \end{LARGE}
+\end{center}
+
+\subsection{常温の銅では銅原子の最外殻電子のうちの\(1個\)が原子から離脱して自由電子になる．\(1g\)の銅内の自由電子数はいくらか．}
+
+\vspace{20em}
+\subsection{距離\(1[\AA]\)を隔てた2個の電子の間に働くクーロン力と万有引力の大きさを求めよ．ただし，電子の質量と電荷はそれぞれ \(m_e=9.11\times10^{-31}[kg], -e=-1.60\times10^{-19}[C]\)である．また万有引力定数は\(G=6.67\times10^{-11}[Nm^2/kg^2]\)である．}
+\end{document}
