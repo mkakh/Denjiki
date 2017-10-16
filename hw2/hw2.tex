@@ -1,0 +1,51 @@
+\documentclass[a4j,12pt]{jsarticle}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{siunitx}
+\usepackage{bm}
+\usepackage{upgreek}
+\topmargin = 0mm
+\pagestyle{empty}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{(\alph{subsubsection})}
+
+\makeatletter
+    \renewcommand{\theequation}{\arabic{subsection}.\arabic{equation}}
+    \@addtoreset{equation}{subsection}
+\makeatother
+
+\begin {document}
+
+\begin{center}
+    \begin{LARGE}
+        {\huge 電磁気学 10/16 宿題} 
+    \end{LARGE}
+\end{center}
+
+% p14, 問1.5
+\subsection{教科書p.13 図1.8(b)のように，\(x\)軸上に長さ\(2a\)にわたって電荷が一様に線密度\(\uplambda\)で分布している．\(x\)軸上で，原点\(\mathrm{O}\)から\(r\;(r>a)\)だけ離れた点\(\mathrm{P}\)での電界を求めよ．更に，\(\uplambda=1.5\times10^{-9}\si{[C/m]},\;r=10\si{[cm]}\)の時の\(\bm{E}\)を求めよ}
+
+\vspace{20em}
+
+% p15, 問1.6
+\subsection{無限に広い平面上に電荷が一様に面密度\(\upsigma\)で分布している．平面から距離\(z\)の点\(\mathrm{P}\)の電界を求めよ．更に，\(\upsigma=1.5\times10^{-10}\si{[C/m^2]}\)の時の\(\bm{E}\)の値を求めよ．}
+
+\newpage
+
+% p25, 問1.8
+\subsection{半径\(a\)の無限に長い円筒上に電荷が一様に面密度\(\upsigma\)で分布している．円筒の中心軸から距離\(r\)だけ離れた点での電界を求めよ．}
+
+\vspace{20em}
+
+% p.25, 問1.9
+\subsection{2枚の無限に広い平行な平面\(\mathrm{A}\)と\(\mathrm{B}\)がある．以下の場合についてまわりの電界を求めよ．}
+\subsubsection{\(\mathrm{A}\)と\(\mathrm{B}\)上に電荷が一様に同じ面密度\(\upsigma\)で分布するとき．}
+\vspace{12em}
+
+\subsubsection{\(\mathrm{A}\)と\(\mathrm{B}\)上に電荷が一様にそれぞれ面密度\(\upsigma\)と\(-\upsigma\)で分布するとき．}
+\newpage
+
+% p.25, 問1.10
+\subsection{半径\(a\)の球全体に総量\(Q\)の電荷が一様に分布している．球の中心\(\mathrm{O}\)から距離\(r\)の点\(\mathrm{P}\)での電界をガウスの法則を用いて求めよ．}
+\end{document}
