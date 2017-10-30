@@ -1,0 +1,45 @@
+\documentclass[a4j,12pt]{jsarticle}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{siunitx}
+\usepackage{bm}
+\usepackage{upgreek}
+\topmargin = 0mm
+\pagestyle{empty}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{(\alph{subsubsection})}
+
+\begin {document}
+
+\begin{center}
+    \begin{LARGE}
+        {\huge 電磁気学 10/30 宿題} 
+    \end{LARGE}
+\end{center}
+
+% p38
+\subsection{次の式を導け．}
+\vspace*{-2em}
+\begin{align}
+    \bm{E} &= -\left(\frac{\partial \phi}{\partial r}\bm{e_r}+\frac{1}{r}\frac{\partial \phi}{\partial \theta}\bm{e_\theta}+\frac{1}{rsin\theta}\frac{\partial \phi}{\partial \varphi}\bm{e_\varphi}\right) \\
+    \bm{E_r} &= -\frac{\partial \phi}{\partial r} = \frac{p\cos\theta}{2\pi\varepsilon_0r^3} \\
+    \bm{E_\theta} &= -\frac{1}{r}\frac{\partial \phi}{\partial \theta} = \frac{p\sin\theta}{4\pi\varepsilon_0r^3} \\
+    \bm{E_\varphi} &= -\frac{1}{r\sin\theta}\frac{\partial \phi}{\partial \varphi} = 0
+\end{align}
+
+\newpage
+
+% p46, 問1.16
+\subsection{半径\(a\)と\(b\)の2つの球状導体を十分に離して置き，この間を細い導線でつなぐ．これに総量\(Q\)の電荷を与えたときの両球の表面での電界を求めて，次の関係が成り立つことを示せ．}
+\vspace*{-1em}
+\begin{equation}
+E=\frac{\sigma}{\varepsilon_0}
+\end{equation}
+
+\vspace{18em}
+
+% p46, 問1.17
+\subsection{半径\(a,\;b,\;c\)の3つの球状導体を十分に離して置き，これらの間を細い導線でつなぐ．これら全体に総量\(Q\)の電荷を与えたときに，個々の球の電位はどうなるか．また，個々の球の表面上の電荷密度はどうなるか．この時，\(b=10\si{[cm]},\;q=2.5\times10^{-10}\si{[C]},\;r=5\si{[cm]}\)での電位はどうなるか．}
+
+\end{document}
