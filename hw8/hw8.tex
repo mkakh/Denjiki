@@ -1,0 +1,51 @@
+\documentclass[a4paper, 12pt]{bxjsarticle}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{siunitx}
+\usepackage{mathspec}
+\setmainfont{IPAexMincho}
+\setsansfont{IPAexGothic}
+\XeTeXlinebreaklocale "ja"
+\topmargin = 0mm
+\pagestyle{empty}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{(\alph{subsubsection})}
+
+\begin {document}
+
+\begin{center}
+    \begin{huge}
+        電磁気学 11/27 宿題
+    \end{huge}
+\end{center}
+
+% p.61 1.14
+\begin{samepage}
+\subsection{p.61 図1.46(a)のように，面積 \(S\) の \(2\) 枚の薄い導体極板を感覚が \(d_1\) になるように平行に置き，一方に電荷 \(Q\) を他方に \(-Q\) の電荷を与える．%
+加えて，電極間には誘電率 \(\varepsilon\) の誘電体を挿入してある．%
+以下の問に答えよ．ただし，導体上の電荷密度は場所によらず一定であり，電界は両導体間にのみ存在するものとする．}
+\subsubsection{両極板の引き合う力を求めよ．}
+\vspace{13em}
+\subsubsection{極板に力を加えて間隔を \(d_2\) まで拡げるとき，どれだけの仕事が必要か．}
+\vspace{13em}
+\subsubsection{p.62 図 1.46(b)のように，両極板間の電位差を常に \(V\) に保つようにして，極板間の間隔を \(d_1\) から \(d_1\) まで変化させるとき，どれだけの仕事が必要か．}
+\end{samepage}
+
+\newpage
+% p.74 式2.26 
+\subsection{ローレンツ力は，\(\boldsymbol{F}=q\boldsymbol{v}\times\boldsymbol{B}\) と表せる．このとき，\(x,\;y,\;z\) 成分は\[%
+    F_x=q(v_yB_z-v_zB_y),\;F_y=q(v_zB_x-v_xB_z),\;F_z=q(v_xB_y-v_yB_x)\]のように書き表されることを示せ．}
+\newpage
+
+% ジュールの法則
+\subsection{回路素子に電圧 \(V\) を与え，電流 \(I\) が流れている．\(2\) 点間の電位差 \(\Delta \phi\) は，\(+1\;\si{(C)}\) の電荷を点から点に運ぶのに必要な仕事である．いま，%
+時間 \(dt\) 間に \(dq\) の電荷が素子を通過した．その際，電源の供給するエネルギーは，\(dU = Vdq\;\si{(J)}\) である．この電気エネルギーは，素子の中で熱エネルギー，磁気エネルギー%
+等に変換される．}
+\subsubsection{\(dU=Vdq\) を使って，電源から素子に供給される電力が，\(W=IV\;\si{(W)}\) であることを示せ．}
+\vspace{13em}
+\subsubsection{素子が電気抵抗 \(R\;\si{(\Omega)}\) のとき，\(W=RI^2\;\si{(W)}\) であることを示せ．(Jaule\('\)s law)}
+
+\end{document}
+
