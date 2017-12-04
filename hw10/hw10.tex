@@ -1,0 +1,57 @@
+\documentclass[a4paper, 12pt]{bxjsarticle}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{siunitx}
+\usepackage{mathspec}
+\setmainfont{IPAexMincho}
+\setsansfont{IPAexGothic}
+\XeTeXlinebreaklocale "ja"
+\topmargin = 0mm
+\pagestyle{empty}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{(\alph{subsubsection})}
+
+\begin {document}
+
+\begin{center}
+    \begin{huge}
+        電磁気学 12/4 宿題
+    \end{huge}
+\end{center}
+
+% p.87 問2.9
+\subsection{p.87 図2.19のような，単位長さ当たりの巻数が \(n\) の無限に長いソレノイドに電流 \(I\) が流れている．%
+p.85 例題2.4.3の結果を用いてコイルの中心軸上の磁束密度を求めよ．}
+\vspace{20em}
+
+% p.99 演習問題2.1
+\subsection{p.99 図2.31(a)のように，\(y\) 軸上に無限に長い直線導体が置いてあり，\(x\) 軸上の \(x=d\) と%
+ \(x=d+l\) の間に長さ \(l\) の直線導体 \(AB\) が置いてある．これらの直線導体にそれぞれ電流 \(I_1\) と \(I_2\) を図のような向きに流すとき，%
+直線導体 \(AB\) に作用する力を求めよ．}
+
+\newpage
+% テキスト p.4 m26
+\subsection{\(\nabla\cdot\nabla\times \boldsymbol{A}=0\)を導け．}
+\vspace{10em}
+% テキスト p.4 from m19 to m21
+\subsection{次の式を導け．}
+\vspace*{-2em}
+\begin{align}
+    \mathrm{grad}\left(\frac{1}{r}\right)=\nabla\left(\frac{1}{r}\right)=-\frac{\hat r}{r^2}
+\end{align}
+\(r \ne 0\)のとき，
+\begin{align}
+    \nabla^2\left(\frac{1}{r}\right) = \mathrm{div\;grad}\left(\frac{1}{r}\right) = \nabla\cdot\nabla\left(\frac{1}{r}\right) = 0
+\end{align}
+\(V\)を点\(\mathrm{P}\)を含む体積としたとき，
+\begin{align}
+    \int_V \nabla^2 \left(\frac{1}{r}\right) dv'= -4\pi
+\end{align}
+\newpage
+% テキスト p.4 m23
+\subsection{\(\nabla\times\nabla\times\boldsymbol{A}=\nabla\left(\nabla\cdot\boldsymbol{A}\right)-\nabla^2\boldsymbol{A}\)を導け．}
+
+\end{document}
+
