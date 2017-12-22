@@ -1,0 +1,80 @@
+\documentclass[a4paper, 12pt]{bxjsarticle}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{siunitx}
+\usepackage{mathspec}
+\setmainfont{IPAexMincho}
+\setsansfont{IPAexGothic}
+\XeTeXlinebreaklocale "ja"
+\topmargin = 0mm
+\pagestyle{empty}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{(\alph{subsubsection})}
+
+\begin {document}
+
+\begin{center}
+    \begin{huge}
+        電磁気学 12/18 宿題
+    \end{huge}
+\end{center}
+
+% p.100 2.5
+\subsection{p.100 図2.32(a)のように，磁極の内側を円筒の側面のように加工して，磁極近くの磁束密度が常に磁極に垂直で，大きさが \(B\) になるようにした永久磁石がある．%
+p.100 図2.32(b)は，磁束線の様子を上から見たものである．この中に，巻数が \(n\) で面積が \(S\) の長方形コイル \(\mathrm{ABCD}\) を置き，コイルの面がはじめ \(\mathrm{N}\) 極と%
+\(\mathrm{S}\) 極とを結ぶ線に平行になるように剛性率 \(G\) の細い線で支える．コイルに電流 \(I\) を \(\mathrm{ABCD}\) の順に流すと，コイルに働く力のモーメントとこれを支える細い線内の%
+応力による力のモーメントとがつり合って，コイルの元の位置からある角度だけ回転する．このときの回転角 \(\theta\) を求めよ．ただし，コイルの辺 \(\mathrm{AB}\) と \(\mathrm{CD}\) は磁極の近くに%
+あるものとする．}
+\newpage
+\begin{samepage}
+% p.100 2.6 (1) (2)
+\subsection{p.101 図2.33(a)のような半径 \(a\)，質量 \(m\) の円輪の上に，総量 \(q\) の電荷が一様に分布している．この円輪を中心 \(\mathrm{O}\) を通り円輪の面に垂直な軸の周りに角速度 \(\omega\) で%
+回転させる．}
+\subsubsection{円輪の中心 \(\mathrm{O}\) における磁束密度を求めよ．}
+\vspace{10em}
+\subsubsection{円輪のもつ磁気モーメントを求めよ．}
+\vspace{10em}
+% p.102 2.11
+\subsection{総量 \(Q\) の電荷が一様に分布する半径 \(a\) の円板を，中心を通り円板面に垂直な軸の周りに角速度 \(\omega\) で回転する．円板の中心での磁束密度を求めよ．}
+\vspace{20em}
+\end{samepage}
+\newpage
+\begin{samepage}
+% p.103 2.14
+\subsection{半径 \(a\) の無限に長い円柱状導体の中を中心軸方向に電流が流れていて，その電流密度は，中心軸からの距離を \(r\) とすると，\[
+    J(r) = J\;\frac{a^2-r^2}{a^2}\;\;\;\;\;(r < a)\]で与えられる．}
+\subsubsection{導体を流れる電流の総量を求めよ．}
+\vspace{10em}
+\subsubsection{中心軸から距離 \(r\) の点での磁束密度を求めよ．}
+\vspace{10em}
+% p.135 3.1
+\subsection{地磁気の鉛直成分が \(3.6\times10^{-5}\si{[T]}\) である空中を，両翼の長さが \(50\si{[m]}\) のジェット機が \(1000\si{[km/h]}\) の速さで水平に飛行している．%
+翼の両翼間で現れる電位差を求めよ．}
+\end{samepage}
+\newpage
+% p.135 3.2
+\subsection{磁束密度 \(B\) の一様な磁界がある．この磁界に垂直な面内で一端 \(\mathrm{O}\) を固定した長さ \(l\) の導体棒 \(\mathrm{OP}\) が置いてあり，\(\mathrm{O}\) を中心に一定の角速度 \(\omega\)で回転している．%
+以下の問に答えよ．}
+\subsubsection{\label{r1}導体棒 \(\mathrm{OP}\) の中で \(\mathrm{O}\) から距離 \(x\) の点での誘導電界を求め，これを \(x\) について積分することによって，\(\mathrm{OP}\) 間に現れる誘導起電力を求めよ．}
+\vspace{10em}
+\subsubsection{導体棒 \(\mathrm{OP}\) が時間 \(t\) の間に掃く磁束を求めて，これを時間で微分すると，その大きさが\ref{r1}で求めた誘導起電力に一致することを示せ．}
+\vspace{10em}
+\subsubsection{\(B=1\si{[T]},\;\omega=100\pi\si{[rad/s]},\;l=1\si{[m]}\)のとき，\(\mathrm{OP}\)間に現れる誘導起電力を計算せよ．}
+\vspace{10em}
+\newpage
+\begin{samepage}
+% p.135 3.3
+\subsection{\(z\) 方向に振動数 \(v\) で振動する磁界がある．半径 \(a\)，巻数 \(n\) の円形コイルをコイルの面が \(xy\) 平面内にあるように置いて，コイルに生ずる誘導起電力を測定したら，その振幅が \(V_0\) であった．%
+振動する磁界の磁束密度の振幅 \(B_0\) を求めよ．}
+    \vspace{20em}
+% オリジナル
+\subsection{導線に密に\(100\)回巻いた半径 \(5.0\;\si{cm}\) の円形コイルがある．%
+時刻 \(t = 0\) にコイルに垂直に磁界を加える．\(0.1\;\si{s}\) の間に磁束密度を \(0\;\si{T}\) から%
+ \(0.5\;\si{T}\) まで直線的に増加する．その間にコイルに生ずる誘導起電力は，何 \(\si{V}\) か．}
+\end{samepage}
+
+
+\end{document}
+
