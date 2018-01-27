@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt]{bxjsarticle}
+\documentclass[a4paper, 11pt]{bxjsarticle}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{txfonts}
@@ -7,13 +7,19 @@
 \setmainfont{IPAexMincho}
 \setsansfont{IPAexGothic}
 \XeTeXlinebreaklocale "ja"
+\addtolength{\textheight}{1cm}
+\addtolength{\topmargin}{-0.5cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\oddsidemargin}{-1cm}
+\addtolength{\evensidemargin}{-1cm}
 \topmargin = 0mm
 \pagestyle{empty}
 
-\renewcommand{\thesubsection}{\arabic{subsection}.}
-\renewcommand{\thesubsubsection}{(\alph{subsubsection})}
+\renewcommand{\thesubsection}{(\arabic{subsection})}
+\renewcommand{\thesubsubsection}{(\roman{subsubsection})}
 
 \begin {document}
+\begin{samepage}
 
 \begin{center}
     \begin{huge}
@@ -21,15 +27,60 @@
     \end{huge}
 \end{center}
 
-\subsection{}
-\subsubsection{教科書 p.127の電磁波に関する記述で，水のような誘電体では，%
-\(\rho = 0,\;\boldsymbol{J} = 0,\;\boldsymbol{D}=\varepsilon  \boldsymbol{E} =\varepsilon _r \varepsilon _0 \boldsymbol{E}\)%
+\section{}
+\subsection{教科書 p.127の電磁波に関する記述で，水のような誘電体では，%
+\(\rho = 0,\;\boldsymbol{J} = 0\) 及び  \(\boldsymbol{D}=\varepsilon  \boldsymbol{E} =\varepsilon _r \varepsilon _0 \boldsymbol{E}\)%
  (但し，\(\varepsilon _r\) は比誘電率)により，アンペール・マクスウェルの方程式(3.45)は，
 \[\mathrm{rot} \boldsymbol{B} = \varepsilon _r \varepsilon _0 \mu_o \frac{\partial \boldsymbol{E}}{\partial t}\]に変わる．このことを示せ．}
-\subsubsection{上の結果によれば，教科書p.127~p.130の記述は誘電体に対して，\(\epsilon _0 \rightarrow \epsilon_r \epsilon_0\) と置き換えれば良いことが分かる．}
+\vspace*{20em}
+\subsection{上の結果によれば，教科書p.127〜p.130の記述は誘電体に対して，\(\varepsilon _0 \rightarrow \varepsilon_r \varepsilon_0\) と置き換えれば良いことが分かる．}
+\end{samepage}
+\newpage
 
-\subsection{}
-\subsubsection{ある平面電磁波の電界が \(E_x=100sin(10^7 t - \omega t)\;\si{(V/m)}\) である．}
+
+\begin{samepage}
+\section{}
+\subsection{ある平面電磁波の電界が \(E_x=100sin(10^7 t - \omega t)\;\si{(V/m)}\) である．以下の値を求めよ．}
+\subsubsection{磁束密度 \(B_y\)}
+\vspace*{7.5em}
+\subsubsection{波長 \(\lambda\)}
+\vspace*{7.5em}
+\subsubsection{周波数 \(f\)}
+\vspace*{7.5em}
+
+\subsection{このことから，誘電体では電磁波の伝搬速度 \(v\) が真空中の光速 \(c\) に対し，\[v=\frac{1}{\sqrt \varepsilon_r} c\]であることを示せ．}
+\vspace*{10em}
+\subsection{比誘電率 \(\varepsilon_r = 1.78\) の水中での光速はいくらか．}
+\end{samepage}
+\newpage
+
+\begin{samepage}
+\section{晴れた空の下での日光の強さが \(1000\si{W/m^2}\) であるとき，地表付近の \(1\si{m^3}\) にはどれだけ電磁エネルギーが含まれているか？}
+\vspace*{25em}
+\section{ある電磁波の磁界の振幅が\[B_m = 4.1\times 10^{-8}\;\si{(T)}\]である．電磁波の強度 \(<S>\) を求めよ．(Hint. [教] p.134 (3.78))}
+\end{samepage}
+
+\newpage
+
+\begin{samepage}
+\section{ある白熱灯のフィラメントは \(150\si{\Omega}\) の抵抗を持ち，\(1\si{A}\) の直流電流が流れている．フィラメントは長さ \(8\si{cm}\)，半径 \(0.9\si{mm}\) である．}
+\subsection{フィラメント表面でのポインティングベクトルを求めよ．}
+\vspace*{25em}
+\subsection{フィラメント表面での電界 \(E\) と磁束密度 \(B\) の強さを求めよ．}
+\end{samepage}
+
+\newpage
+
+\begin{samepage}
+\section{テキストp40の図17.2は同一平面内にある細い \(2\) 本の平行導線である．導線の抵抗は無視できるとする．これは%
+簡単な電話線と考えてよい．線間の電圧を \(V=V_0 \cos \omega t\)，導線の電流を \(I = I_0 \cos \omega t\) とする．}
+\subsection{送信端(電源)から受信端(抵抗・電話器)に送られる電力の時間平均値(実効値)を示せ．}
+\vspace*{13em}
+\subsection{\(2\) 本の導線を含む平面内に，\(2\) 導線に垂直な直線を引く．この直線上で，点 \(\mathrm{A}\)，点 \(\mathrm{B}\)，点 \(\mathrm{C}\) はそれぞれ，テキストp40の図17.2に示す位置にある．}
+\subsubsection{\(\omega t = 0\) に於ける電界 \(\boldsymbol{E}\)，磁束密度 \(\boldsymbol{B}\)，情報の流れる向き(ポインティングベクトル \(\boldsymbol S\) の向き) を \(\mathrm{A}\)，\(\mathrm{B}\)，\(\mathrm{C}\) の各点について，テキストp40 (2.1)に指定された \(3\) つの記号などを使って，テキストp40 図17.2の上に示せ．\label{ue}}
+\vspace*{13em}
+\subsubsection{\(\omega t = \pi\) の時刻について，\ref{ue}と同じ問に答えよ．}
+\end{samepage}
 
 \end{document}
 
